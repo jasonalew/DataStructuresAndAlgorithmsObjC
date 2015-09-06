@@ -16,6 +16,8 @@
 		55734F4C1B7D01430065C092 /* DataStructuresAndAlgorithmsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55734F4B1B7D01430065C092 /* DataStructuresAndAlgorithmsTests.m */; };
 		55734F571B7D02190065C092 /* JALMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 55734F561B7D02190065C092 /* JALMethods.m */; };
 		55734F581B7D02190065C092 /* JALMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 55734F561B7D02190065C092 /* JALMethods.m */; };
+		55734F5C1B7D1D600065C092 /* JALBinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 55734F5B1B7D1D600065C092 /* JALBinarySearch.m */; };
+		55734F5D1B7D1D600065C092 /* JALBinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 55734F5B1B7D1D600065C092 /* JALBinarySearch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550DFC971B9CEBAF0069E67A /* JALLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALLog.h; sourceTree = "<group>"; };
 		55734F2C1B7D01430065C092 /* DataStructuresAndAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresAndAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55734F301B7D01430065C092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55734F311B7D01430065C092 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,6 +47,8 @@
 		55734F4B1B7D01430065C092 /* DataStructuresAndAlgorithmsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructuresAndAlgorithmsTests.m; sourceTree = "<group>"; };
 		55734F551B7D02190065C092 /* JALMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALMethods.h; sourceTree = "<group>"; };
 		55734F561B7D02190065C092 /* JALMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALMethods.m; sourceTree = "<group>"; };
+		55734F5A1B7D1D600065C092 /* JALBinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALBinarySearch.h; sourceTree = "<group>"; };
+		55734F5B1B7D1D600065C092 /* JALBinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALBinarySearch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 		55734F2E1B7D01430065C092 /* DataStructuresAndAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				55734F591B7D1D450065C092 /* Algorithms */,
 				55734F331B7D01430065C092 /* AppDelegate.h */,
 				55734F341B7D01430065C092 /* AppDelegate.m */,
 				55734F361B7D01430065C092 /* ViewController.h */,
@@ -102,6 +108,7 @@
 		55734F2F1B7D01430065C092 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				550DFC971B9CEBAF0069E67A /* JALLog.h */,
 				55734F301B7D01430065C092 /* Info.plist */,
 				55734F311B7D01430065C092 /* main.m */,
 			);
@@ -123,6 +130,15 @@
 				55734F4A1B7D01430065C092 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55734F591B7D1D450065C092 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				55734F5A1B7D1D600065C092 /* JALBinarySearch.h */,
+				55734F5B1B7D1D600065C092 /* JALBinarySearch.m */,
+			);
+			name = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55734F5C1B7D1D600065C092 /* JALBinarySearch.m in Sources */,
 				55734F381B7D01430065C092 /* ViewController.m in Sources */,
 				55734F351B7D01430065C092 /* AppDelegate.m in Sources */,
 				55734F571B7D02190065C092 /* JALMethods.m in Sources */,
@@ -240,6 +257,7 @@
 			files = (
 				55734F581B7D02190065C092 /* JALMethods.m in Sources */,
 				55734F4C1B7D01430065C092 /* DataStructuresAndAlgorithmsTests.m in Sources */,
+				55734F5D1B7D1D600065C092 /* JALBinarySearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +448,7 @@
 				55734F511B7D01430065C092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55734F521B7D01430065C092 /* Build configuration list for PBXNativeTarget "DataStructuresAndAlgorithmsTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +457,7 @@
 				55734F541B7D01430065C092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
